@@ -1,74 +1,46 @@
-html {
-  box-sizing: border-box;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-#piano {
-  background-color: #00471b;
-  width: 992px;
-  height: 290px;
-  margin: 80px auto;
-  padding: 90px 20px 0 20px;
-  position: relative;
-  border-radius: 10px;
+#navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-.keys {
-  background-color: #040404;
-  width: 949px;
-  height: 180px;
-  padding-left: 2px;
-  overflow: hidden;
+.nav-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-.key {
-  background-color: #ffffff;
-  position: relative;
-  width: 41px;
-  height: 175px;
-  margin: 2px;
-  float: left;
-  border-radius: 0 0 3px 3px;
+.nav-link:hover {
+    background-color: #555;
 }
 
-.key.black--key::after {
-  background-color: #1d1e22;
-  content: "";
-  position: absolute;
-  left: -18px;
-  width: 32px;
-  height: 100px;
-  border-radius: 0 0 3px 3px;
+.main-section {
+    padding: 20px;
 }
 
-.logo {
-  width: 200px;
-  position: absolute;
-  top: 23px;
-}
+@media (min-width: 768px) {
+    #navbar {
+        width: 250px;
+    }
 
-@media (max-width: 768px) {
-  #piano {
-    width: 358px;
-  }
-
-  .keys {
-    width: 318px;
-  }
-
-  .logo {
-    width: 150px;
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 769px) {
- #piano{
-   width: 675px;
-}
-.keys{
-  width: 633px;
-}
+    #main-doc {
+        margin-left: 250px;
+    }
 }
