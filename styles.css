@@ -1,45 +1,57 @@
-body {
-  background-color: #0a0a23;
+{
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: burlywood;
 }
-
-#text {
-  background-color: #0a0a23;
-  color: #ffffff;
-  padding: 10px;
+h1 {
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
-
-#game {
-  max-width: 500px;
-  max-height: 400px;
-  background-color: #ffffff;
-  color: #ffffff;
-  margin: 30px auto 0px;
-  padding: 10px;
+h2 {
+  font-size: 30px;
 }
-
-#controls,
-#stats {
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #0a0a23;
+h1,
+h2,
+h3,
+p {
+  text-align: center;
 }
-
-#monsterStats {
-  display: none;
-  border: 1px solid #0a0a23;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #c70d0d;
+figure {body
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  unicode-bidi: isolate;
 }
-
-.stat {
-  padding-right: 10px;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-button {
-  cursor: pointer;
-  color: #0a0a23;
-  background-color: #feac32;
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border: 3px solid #feac32;
+li,
+ul {
+  display: block;
+  text-align: center;
+}
+figcaption {
+  text-align: center;
+}
+hr {
+height: 2px;
+background-color: brown;
+border-color: brown;
+}
+.bottom-line {
+margin-top: 25px;
+}
+footer {
+font-size: 14px;
+}
+h1,h2 {
+font-family: Impact,serif;
+}
+figcaption {
+font-family: Impact,serif;
 }
