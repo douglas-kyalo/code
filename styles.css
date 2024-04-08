@@ -1,87 +1,84 @@
-body {
-  background-image: url(https://www.solidbackgrounds.com/images/1080x1920/1080x1920-carolina-blue-solid-color-background.jpg);
-  font-family: sans-serif;
-  padding: 20px;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: century;
 }
-
+header {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 400px;
+  margin-right: 60px;
+  font-size: 17px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+ul li.active a{
+   background-color: #fff;
+   color: #000;
+}
 h1 {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-.established {
-  font-style: italic;
-}
-
-h1,
-h2,
-p {
   text-align: center;
 }
+.logo img {
+  float: left;
+  width: 150px;
+  height: auto;
 
-.football enquiries {
-  width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max width: 500px;
-  text-align: left;
-  width: 75%;
 }
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+.button{
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate
+}
+.btn{
+border:1px solid #fff;
+padding: 5px 20px;
+color: #fff;
+transition: 0.5 ease;
+font-size: 18px;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #000;
 
-img {
-display:block;
-margin-left: auto;
-margin-right: auto;
 }
-
-.item p {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
+.title{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%,-50%)
 }
-.price {
-text-align: right;
-width: 25%;
-}
-
-.bottom-line {
-margin-top: 25px;
-}
-
-footer {
-font-size: 14px;
-}
-
-.address {
-margin-bottom: 5px;
-}
-
-a {
-color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: brown;
-}
-
-hr {
-  height: 2px;
-  background-color: brown;
-  border-color: brown;
+.tittle h1{
+  color: #fff;
+  font-size: 70px;
 }
