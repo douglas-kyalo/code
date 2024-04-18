@@ -1,58 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learn localStorage by Building a Todo App</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <main>
-    <h1>Todo App</h1>
-    <div class="todo-app">
-      <button id="open-task-form-btn" class="btn large-btn">
-        Add New Task
-      </button>
-      <form class="task-form hidden" id="task-form">
-        <div class="task-form-header">
-          <button id="close-task-form-btn" class="close-task-form-btn" type="button" aria-label="close">
-            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"><path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)" /><path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)" /></svg>
-          </button>
+<html>
+    <head>
+        <title>Barber Shop</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/CSS/font-awesome.min.CSS">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+     <section id="banner">
+        <img src="https://e7.pngegg.com/pngimages/629/114/png-clipart-black-barbershop-calligraphy-illustration-sticker-barbershop-wall-decal-salon-glass-text-thumbnail.png" class="logo">
+        <div class="banner-text">
+            <h1>Kim Ltd Hair Studio</h1>
+            <p>Style your Hair,Style your Life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
         </div>
-        <div class="task-form-body">
-          <label class="task-form-label" for="title-input">Title</label>
-          <input required type="text" class="form-control" id="title-input" value="" />
-          <label class="task-form-label" for="date-input">Date</label>
-          <input type="date" class="form-control" id="date-input" value="" />
-          <label class="task-form-label" for="description-input">Description</label>
-          <textarea class="form-control" id="description-input" cols="30" rows="5"></textarea>
-        </div>
-        <div class="task-form-footer">
-          <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
-            Add Task
-          </button>
-        </div>
-      </form>
-      <dialog id="confirm-close-dialog">
-        <form method="dialog">
-          <p class="discard-message-text">Discard unsaved changes?</p>
-          <div class="confirm-close-dialog-btn-container">
-            <button id="cancel-btn" class="btn">
-              Cancel
-            </button>
-            <button id="discard-btn" class="btn">
-              Discard
-            </button>
-          </div>
-        </form>
-      </dialog>
-      <div id="tasks-container"></div>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
+     </section>
+     <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                 <li><a href="#">Features</a></li>
+                  <li><a href="#">Services</a></li>
+                   <li><a href="#">Feedbacks</a></li>
+                    <li><a href="#">Meet us</a></li>
+            </ul>
+        </nav>
+     </div>
+     <div id="menuBtn">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/05/73/menu-button-icon-design-vector-22050573.jpg" id="menu">
+     </div>
 
+    <section id="feature">
+       <div class="title-text">
+         <p>FEATURES</p>
+         <h1>Why Choose Us</h1>
+       </div>
+       <div class="feature-box">
+         <div class="features">
+           <h1>Experienced Staff</h1>
+           <div class="features-desc">
+              <div class="feture-text">
+                <p>"Step into our studio and experience the artistry of our seasoned professionals. Our experienced staff brings passion, creativity, and expertise to every hair journey, ensuring you leave feeling confident and beautiful."</p>
+              </div>
+           </div>
+            <h1>Pre Booking Online</h1>
+           <div class="features-desc">
+              <div class="feture-text">
+                <p>""Ready for a new look? Pre-book your hair appointment online today at [KIM LTD HAIR STUDIO]! Choose your preferred date and time for a seamless experience. See you soon!""</p>
+              </div>
+           </div>
+            <h1>Affordable Cost</h1>
+           <div class="features-desc">
+              <div class="feture-text">
+                <p>""Get the perfect look without breaking the bank! Affordable rates at [KIM LTD HAIR STUDIO]. Book now for a budget-friendly makeover!""</p>
+              </div>
+           </div>
+         </div>
+         <div class="features-img">
+              <img src="https://www.shutterstock.com/image-photo/barber-making-hairstyle-confident-bearded-600nw-1975664201.jpg">
+         </div>
+       </div>
+    </section>
+      <section id="service">
+        <div class="title-text">
+         <p>SERVICES</p>
+         <h1>We Provide Better</h1>
+       </div>
+       <div class="service-box">
+         <div class="single-service">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKKnSOesU-y7gltxfkN2tTMkiSfS9CWleDTGXuj7ezxg&s">
+               <div class="overlay"></div>
+         </div>
+           <div class="single-service">
+              <img src="https://media.istockphoto.com/id/1677718095/photo/young-man-having-a-haircut-at-barber-shop.webp?b=1&s=170667a&w=0&k=20&c=OLUyr_osPcmXMOfGmNmTfmq48vfV2oj3wH8IurBYR9c=">
+                <div class="overlay"></div>
+           </div>
+             <div class="single-service">
+                <img src="https://img.freepik.com/premium-photo/close-up-view-young-bearded-man-that-sitting-getting-haircut-barber-shop_146671-40437.jpg">
+                  <div class="overlay"></div>
+             </div>
+               <div class="single-service">
+                  <img src="https://img.freepik.com/free-photo/handsome-man-barber-shop-styling-hair_1303-20978.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713312000&semt=ais">
+                      <div class="overlay"></div>
+               </div>
+        </div>
+      </section>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu    = document.getElementById("menu")
+
+    sideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+        }else{
+            sideNav.style.right = "-250px";
+        }
+    }
+</script>
+    </body>
 </html>
