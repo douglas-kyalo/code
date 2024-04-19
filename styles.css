@@ -10,6 +10,7 @@
   background-position: center;
   height: 100vh;
 }
+
 .logo {
   width: 140px;
   position: absolute;
@@ -17,9 +18,11 @@
   left: 10%;
 }
 .banner-text {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: #fff;
-  padding-top: 180px;
+  padding-top: 20rem;
 }
 .banner-text h1 {
   font-size: 130px;
@@ -105,11 +108,20 @@ nav ul li a {
 }
 #feature {
   width: 100%;
-  padding: 70px 0;
+  padding: 7rem 0;
 }
+
 .title-text {
   text-align: center;
   padding-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  #feature {
+    padding: 4rem 0;;
+  }
+  .title-text {
+    padding-bottom: 2rem;
+  }
 }
 .title-text p {
   margin: auto;
@@ -140,12 +152,16 @@ nav ul li a {
   width: 80%;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 .features {
   flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .features-img {
   flex-basis: 50%;
@@ -157,7 +173,7 @@ nav ul li a {
   border-radius: 10px;
 }
 .features h1 {
-  text-align: left;
+  /* text-align: left; */
   margin-bottom: 10px;
   font-weight: 100%;
   color: #009688;
@@ -183,6 +199,9 @@ nav ul li a {
   }
   .features-img img {
     width: 100%;
+  }
+  .feature-box {
+    flex-direction: column;
   }
 }
 #service {
@@ -248,7 +267,7 @@ hr {
   opacity: 1;
 }
 @media screen and (max-width: 770px) {
-  single-service {
+  .single-service {
     flex-basis: 100%;
     margin-bottom: 30px;
   }
@@ -257,5 +276,9 @@ hr {
   }
   hr {
     margin: 5px auto;
+  }
+  .service-box {
+    flex-direction: column;
+    height: auto;
   }
 }
