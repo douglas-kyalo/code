@@ -1,99 +1,85 @@
-.wheel {
-  border: 2px solid black;
-  border-radius: 50%;
-  margin-left: 50px;
-  position: absolute;
-  height: 55vw;
-  width: 55vw;
-  max-width: 500px;
-  max-height: 500px;
-  animation-name: wheel;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.line {
-  background-color: black;
-  width: 50%;
-  height: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform-origin: 0% 0%;
+:root {
+  --light-grey: #f5f6f7;
+  --dark-blue: #1b1b32;
+  --orange: #f1be32;
 }
 
-.line:nth-of-type(2) {
-  transform: rotate(60deg);
-}
-.line:nth-of-type(3) {
-  transform: rotate(120deg);
-}
-.line:nth-of-type(4) {
-  transform: rotate(180deg);
-}
-.line:nth-of-type(5) {
-  transform: rotate(240deg);
-}
-.line:nth-of-type(6) {
-  transform: rotate(300deg);
+body {
+  background-color: var(--dark-blue);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: var(--light-grey);
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cabin {
-  background-color: red;
-  width: 20%;
-  height: 20%;
-  position: absolute;
-  border: 2px solid;
-  transform-origin: 50% 0%;
-  animation: cabins 10s ease-in-out infinite;
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 20px 0;
 }
 
-.cabin:nth-of-type(1) {
-  right: -8.5%;
-  top: 50%;
-}
-.cabin:nth-of-type(2) {
-  right: 17%;
-  top: 93.5%;
-}
-.cabin:nth-of-type(3) {
-  right: 67%;
-  top: 93.5%;
-}
-.cabin:nth-of-type(4) {
-  left: -8.5%;
-  top: 50%;
-}
-.cabin:nth-of-type(5) {
-  left: 17%;
-  top: 7%;
-}
-.cabin:nth-of-type(6) {
-  right: 17%;
-  top: 7%;
+.input-container {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes wheel {
-   0% {
-     transform: rotate(0deg);
-   }
-   100% {
-     transform: rotate(360deg);
-   }
+.convert-btn {
+  background-color: var(--orange);
+  cursor: pointer;
+  border: none;
+  padding: 4px;
 }
 
-@keyframes cabins {
-  0% {
-    transform: rotate(0deg);
+.number-input {
+  height: 25px;
+}
+
+#result {
+  margin: 10px 0;
+  min-width: 200px;
+  width: fit-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid var(--orange);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#animation-container {
+  margin: auto;
+  max-width: 300px;
+}
+
+.animation-frame {
+  margin: 250px auto 0;
+  padding: 15px 10px;
+  border: 5px solid var(--orange);
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .input-container {
+    flex-direction: row;
   }
-  25% {
-    background-color: yellow;
-  }
-  50% {
-    background-color: purple;
-  }
-  100% {
-    transform: rotate(-360deg);
+
+  #result {
+    max-width: 460px;
   }
 }
