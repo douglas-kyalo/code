@@ -1,52 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>LIMITED COMPANY</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decimal to Binary Converter</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="football enquiries">
-      <main>
-        <h1>KIM LIMITED COMPANY</h1>
-        <p class="established">Est.2025</p>
-        <hr />
-        <h2>football enquiries:</h2>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNQTvJtltP03eJMu9W9ufiSiz3600H-UYywEqQi0QxoQ&s"
-          alt-="football kit icon"
-        />
-        <article class="item">
-          <p class="kit">Football Jersy</p>
-          <p class="price">$20</p>
-        </article>
-        <article class="item">
-          <p class="boots">Addidas Boots</p>
-          <p class="price">$30</p>
-        </article>
-        <article class="item">
-          <p class="First aid kits">First Aid Kit</p>
-          <p class="price">$35</p>
-        </article>
-        <article class="item">
-          <p class="football Nets">Strong Fibric Nets</p>
-          <p class="price">$36</p>
-        </article>
-        <article class="item">
-          <p class="soccer balls">Soccer Ball Mikasa Model</p>
-          <p class="price">$35</p>
-        </article>
-      </main>
-      <hr class="bottom-line" />
-      <footer>
-        <p>
-          <a href="https://www.kimlimited.com" target="_blank"
-            >Visit our Website</a
-          >
-        </p>
-        <p class="address">123 kim sports choice</p>
-      </footer>
+    <h1>Decimal to Binary Converter</h1>
+    <div class="input-container">
+      <label for="number-input">Enter a decimal number:</label>
+      <input
+        value=""
+        type="number"
+        name="decimal number input"
+        id="number-input"
+        class="number-input"
+      />
+      <button class="convert-btn" id="convert-btn">Convert</button>
     </div>
+    <output id="result" for="number-input"></output>
+    <div id="animation-container"></div>
+    <script src="script.js"></script>
   </body>
 </html>
